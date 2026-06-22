@@ -8,7 +8,7 @@ Website sederhana untuk portofolio dan laporan final project kampus: **EaTS - Ea
 - Daftar fitur utama untuk owner, kasir, inventory, dan pembeli.
 - Galeri rancangan UI menggunakan aset `owner.png`, `pos.png`, `inventory.png`, dan `customer.png`.
 - Ringkasan entitas database, tech stack, dan timeline pengerjaan.
-- Paket `eats-ui-prototype.zip` untuk membagikan file demo.
+- Folder `demo/` berisi prototype lengkap hasil ekstrak ZIP.
 
 ## Menjalankan
 
@@ -16,15 +16,15 @@ Cara paling sederhana:
 
 1. Buka `index.html` langsung di browser.
 2. Klik tab galeri UI untuk melihat fitur owner, kasir, inventory, dan pembeli.
-3. Klik tombol `Download demo` untuk mengunduh file ZIP.
+3. Klik tombol `Lihat demo` di kanan atas untuk membuka prototype lengkap di tab baru.
 
-## Isi ZIP
+## Isi Folder Demo
 
-- `index.html`
-- `styles.css`
-- `app.js`
-- `owner.png`
-- `pos.png`
-- `inventory.png`
-- `customer.png`
-- `README.md`
+- `demo/index.html`
+- `demo/styles.css`
+- `demo/app.js`
+- `demo/owner.png`
+- `demo/pos.png`
+- `demo/inventory.png`
+- `demo/customer.png`
+- `demo/README.md`

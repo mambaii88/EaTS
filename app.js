@@ -2,7 +2,7 @@ const project = {
   metrics: [
     { label: 'Role pengguna', value: '4' },
     { label: 'Screen prototype', value: '4' },
-    { label: 'File demo', value: '8' },
+    { label: 'File demo UI', value: '8' },
   ],
   features: [
     {
@@ -57,14 +57,14 @@ const project = {
     },
   ],
   files: [
-    { name: 'index.html', description: 'Struktur halaman portofolio dan laporan.' },
-    { name: 'styles.css', description: 'Tampilan responsif untuk desktop dan mobile.' },
-    { name: 'app.js', description: 'Interaksi tab galeri, data fitur, dan konten laporan.' },
-    { name: 'owner.png', description: 'Preview owner dashboard.' },
-    { name: 'pos.png', description: 'Preview layar POS kasir.' },
-    { name: 'inventory.png', description: 'Preview inventory dan resep.' },
-    { name: 'customer.png', description: 'Preview menu pembeli.' },
-    { name: 'README.md', description: 'Panduan membuka demo dan isi project.' },
+    { name: 'demo/index.html', description: 'Halaman prototype lengkap yang dibuka dari tombol Lihat demo.' },
+    { name: 'demo/styles.css', description: 'Styling prototype high-fidelity empat layar.' },
+    { name: 'demo/app.js', description: 'Interaksi prototype seperti filter, tab, tombol, dan cart.' },
+    { name: 'demo/owner.png', description: 'Preview owner dashboard.' },
+    { name: 'demo/pos.png', description: 'Preview layar POS kasir.' },
+    { name: 'demo/inventory.png', description: 'Preview inventory dan resep.' },
+    { name: 'demo/customer.png', description: 'Preview menu pembeli.' },
+    { name: 'demo/README.md', description: 'Catatan sumber prototype lama.' },
   ],
   coverage: [
     'Alur owner memantau omzet, transaksi, meja, dan stok.',
@@ -78,7 +78,7 @@ const project = {
     { phase: 'Analisis', detail: 'Memetakan proses kasir, pembeli, owner, stok, dan laporan.' },
     { phase: 'Perancangan', detail: 'Menyusun ERD, skema database, dan user flow tiap role.' },
     { phase: 'Prototype', detail: 'Membuat rancangan UI untuk dashboard, POS, inventori, dan menu pembeli.' },
-    { phase: 'Demo', detail: 'Menyajikan website portofolio statis dan paket ZIP untuk presentasi.' },
+    { phase: 'Demo', detail: 'Menyajikan website portofolio statis dan tab prototype lengkap untuk presentasi.' },
   ],
 };
 

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EaTS - Easy Transaction System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="prototype-nav" aria-label="Prototype screens">
+    <a href="#owner">01 Owner Dashboard</a>
+    <a href="#pos">02 POS Kasir</a>
+    <a href="#inventory">03 Inventory & Recipe</a>
+    <a href="#customer">04 Customer Menu</a>
+  </nav>
+
+  <main class="canvas">
+    <section class="canvas-item" id="owner">
+      <div class="canvas-label"><span>01</span> Owner Dashboard</div>
+      <div class="screen dashboard-screen">
+        <aside class="sidebar">
+          <div class="brand"><span class="brand-mark">E</span><div><strong>EaTS</strong><small>Warung IF</small></div></div>
+          <div class="role-pill"><span class="live-dot"></span> Owner workspace</div>
+          <nav class="side-nav">
+            <a class="active" href="#owner"><span>OV</span>Overview</a>
+            <a href="#pos"><span>TR</span>Transaksi</a>
+            <a href="#customer"><span>MN</span>Menu</a>
+            <a href="#inventory"><span>ST</span>Stok bahan</a>
+            <a href="#inventory"><span>RP</span>Resep</a>
+            <a href="#owner"><span>MJ</span>Meja</a>
+            <a href="#owner"><span>LP</span>Laporan</a>
+          </nav>
+          <div class="sidebar-note">
+            <span class="eyebrow">SYSTEM HEALTH</span>
+            <strong>Semua layanan normal</strong>
+            <p>Sinkronisasi terakhir 13:04 WIB</p>
+          </div>
+          <div class="profile-row"><span class="avatar">IB</span><div><strong>Imam Baidhawi</strong><small>Pemilik Warung</small></div><button>•••</button></div>
+        </aside>
+
+        <div class="workspace">
+          <header class="topbar">
+            <div class="search-box"><span>⌕</span><input aria-label="Cari data" placeholder="Cari transaksi, menu, atau pelanggan"></div>
+            <div class="top-actions"><button class="icon-button">?</button><button class="icon-button notification">!</button><button class="primary-button">+ Transaksi baru</button></div>
+          </header>
+
+          <div class="content">
+            <div class="page-heading">
+              <div><span class="eyebrow lime">MONDAY, 15 JUNE 2026</span><h1>Selamat siang, Imam.</h1><p>Kantin sedang ramai. Berikut kondisi Warung IF secara real-time.</p></div>
+              <div class="date-control"><span>Hari ini</span><strong>15 Jun 2026</strong><button>⌄</button></div>
+            </div>
+
+            <div class="hero-grid">
+              <article class="revenue-card">
+                <div class="card-top"><div><span class="eyebrow dark">OMZET HARI INI</span><h2>Rp73.000</h2></div><span class="trend positive">+18,4%</span></div>
+                <p>3 transaksi selesai <span>•</span> rata-rata Rp24.333</p>
+                <div class="chart" aria-label="Grafik omzet per jam">
+                  <div class="chart-grid"></div>
+                  <svg viewBox="0 0 760 180" role="img" aria-label="Revenue line chart">
+                    <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8ff55" stop-opacity=".45"/><stop offset="1" stop-color="#d8ff55" stop-opacity="0"/></linearGradient></defs>
+                    <path class="area" d="M0,154 C90,150 105,125 180,128 S290,112 350,116 S455,92 520,101 S640,28 760,38 L760,180 L0,180 Z"/>
+                    <path class="line" d="M0,154 C90,150 105,125 180,128 S290,112 350,116 S455,92 520,101 S640,28 760,38"/>
+                    <circle cx="520" cy="101" r="7"/><circle cx="760" cy="38" r="7"/>
+                  </svg>
+                  <div class="chart-labels"><span>08.00</span><span>10.00</span><span>12.00</span><span>14.00</span><span>16.00</span></div>
+                </div>
+              </article>
+
+              <article class="rush-card">
+                <div class="rush-glow"></div>
+                <span class="eyebrow lime">LIVE RUSH</span>
+                <h2>12:00–13:30</h2>
+                <p>Jam tersibuk hari ini</p>
+                <div class="rush-meter"><span style="width:82%"></span></div>
+                <div class="rush-stats"><div><strong>82%</strong><small>kapasitas meja</small></div><div><strong>4m 18s</strong><small>waktu layanan</small></div></div>
+                <button class="ghost-button">Buka mode operasional →</button>
+              </article>
+            </div>
+
+            <div class="metric-grid">
+              <article class="metric-card"><span class="metric-icon violet">TX</span><div><small>Transaksi</small><strong>3</strong><p><b>+1</b> dari kemarin</p></div></article>
+              <article class="metric-card"><span class="metric-icon cyan">MJ</span><div><small>Meja tersedia</small><strong>2 / 3</strong><p><b>66%</b> siap digunakan</p></div></article>
+              <article class="metric-card"><span class="metric-icon coral">ST</span><div><small>Stok kritis</small><strong>3 item</strong><p class="danger-text">Perlu restock hari ini</p></div></article>
+              <article class="metric-card"><span class="metric-icon lime-bg">MN</span><div><small>Menu aktif</small><strong>4</strong><p><b>Nasgor IF</b> terlaris</p></div></article>
+            </div>
+
+            <div class="lower-grid">
+              <article class="panel popular-panel">
+                <div class="panel-title"><div><span class="eyebrow">TOP 5 MENU</span><h3>Paling diminati</h3></div><button class="text-button">Lihat laporan →</button></div>
+                <div class="bar-list">
+                  <div><span>01</span><b>Nasgor IF</b><i><em style="width:92%"></em></i><strong>3</strong></div>
+                  <div><span>02</span><b>Kopi Susu</b><i><em style="width:68%"></em></i><strong>2</strong></div>
+                  <div><span>03</span><b>Es Teh</b><i><em style="width:40%"></em></i><strong>1</strong></div>
+                  <div><span>04</span><b>Kentang</b><i><em style="width:18%"></em></i><strong>0</strong></div>
+                </div>
+              </article>
+
+              <article class="panel transaction-panel">
+                <div class="panel-title"><div><span class="eyebrow">AKTIVITAS TERBARU</span><h3>Transaksi hari ini</h3></div><button class="filter-button">Semua status ⌄</button></div>
+                <table>
+                  <thead><tr><th>NOTA</th><th>PELANGGAN</th><th>METODE</th><th>TOTAL</th><th>STATUS</th></tr></thead>
+                  <tbody>
+                    <tr><td><strong>TX26000003</strong><small>13:00</small></td><td>Dimas</td><td>QRIS</td><td>Rp15.000</td><td><span class="status success">Selesai</span></td></tr>
+                    <tr><td><strong>TX26000002</strong><small>12:30</small></td><td>Citra</td><td>QRIS</td><td>Rp24.000</td><td><span class="status success">Selesai</span></td></tr>
+                    <tr><td><strong>TX26000001</strong><small>10:15</small></td><td>Budi</td><td>Tunai</td><td>Rp34.000</td><td><span class="status success">Selesai</span></td></tr>
+                  </tbody>
+                </table>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas-item" id="pos">
+      <div class="canvas-label"><span>02</span> POS Kasir</div>
+      <div class="screen pos-screen">
+        <aside class="mini-sidebar">
+          <div class="brand compact"><span class="brand-mark">E</span></div>
+          <nav><a class="active" href="#pos">⌂<small>Kasir</small></a><a href="#owner">▦<small>Pesanan</small></a><a href="#owner">▤<small>Meja</small></a><a href="#customer">◉<small>Pelanggan</small></a></nav>
+          <span class="avatar">AH</span>
+        </aside>
+        <div class="pos-main">
+          <header class="pos-header">
+            <div><span class="eyebrow lime">WARUNG IF / KASIR 01</span><h1>Pesanan baru</h1></div>
+            <div class="pos-head-actions"><div class="clock"><span class="live-dot"></span><strong>13:06</strong><small>Senin, 15 Jun</small></div><button class="outline-button">Tahan pesanan</button></div>
+          </header>
+          <div class="pos-search-row">
+            <div class="search-box light"><span>⌕</span><input placeholder="Cari menu atau scan kode"></div>
+            <button class="category-chip active" data-filter="semua">Semua <b>4</b></button><button class="category-chip" data-filter="makanan">Makanan <b>2</b></button><button class="category-chip" data-filter="minuman">Minuman <b>2</b></button>
+          </div>
+          <div class="pos-body">
+            <div class="menu-area">
+              <div class="table-strip">
+                <div><span class="eyebrow">PILIH MEJA</span><strong>Area Warung IF</strong></div>
+                <button class="table-chip available"><i>01</i><span><b>Meja 001</b><small>4 kursi · kosong</small></span></button>
+                <button class="table-chip occupied"><i>02</i><span><b>Meja 002</b><small>2 kursi · terisi</small></span></button>
+                <button class="table-chip"><i>+</i><span><b>Take away</b><small>Tanpa meja</small></span></button>
+              </div>
+              <div class="menu-section-title"><div><span class="eyebrow">KATALOG</span><h2>Pilih menu</h2></div><span>4 menu tersedia</span></div>
+              <div class="food-grid">
+                <article class="food-card" data-name="Nasgor IF" data-price="15000" data-category="makanan"><div class="food-art nasgor"><span>BEST<br>SELLER</span></div><div class="food-copy"><div><span class="food-tag">MAKANAN</span><span class="stock good">50 stok</span></div><h3>Nasgor IF</h3><p>Nasi goreng signature dengan telur.</p><footer><strong>Rp15.000</strong><button class="add-item" aria-label="Tambah Nasgor IF">+</button></footer></div></article>
+                <article class="food-card" data-name="Es Teh" data-price="4000" data-category="minuman"><div class="food-art tea"></div><div class="food-copy"><div><span class="food-tag blue">MINUMAN</span><span class="stock good">100 stok</span></div><h3>Es Teh</h3><p>Teh manis dingin untuk jam istirahat.</p><footer><strong>Rp4.000</strong><button class="add-item" aria-label="Tambah Es Teh">+</button></footer></div></article>
+                <article class="food-card" data-name="Kopi Susu" data-price="12000" data-category="minuman"><div class="food-art coffee"></div><div class="food-copy"><div><span class="food-tag blue">MINUMAN</span><span class="stock warn">40 stok</span></div><h3>Kopi Susu</h3><p>Kopi creamy dari Kopi TC.</p><footer><strong>Rp12.000</strong><button class="add-item" aria-label="Tambah Kopi Susu">+</button></footer></div></article>
+                <article class="food-card" data-name="Kentang" data-price="10000" data-category="makanan"><div class="food-art fries"></div><div class="food-copy"><div><span class="food-tag">MAKANAN</span><span class="stock warn">30 stok</span></div><h3>Kentang</h3><p>Kentang renyah, cocok untuk berbagi.</p><footer><strong>Rp10.000</strong><button class="add-item" aria-label="Tambah Kentang">+</button></footer></div></article>
+              </div>
+            </div>
+            <aside class="checkout-panel">
+              <div class="checkout-head"><div><span class="eyebrow lime">CURRENT ORDER</span><h2>Meja 001</h2></div><button>•••</button></div>
+              <div class="customer-field"><span class="avatar soft">BU</span><div><small>Pelanggan</small><strong>Budi · Mahasiswa</strong></div><button>Ubah</button></div>
+              <div class="order-list" id="order-list">
+                <div class="order-item"><span class="qty">2</span><div><strong>Nasgor IF</strong><small>Catatan: sedang</small></div><b>Rp30.000</b></div>
+                <div class="order-item"><span class="qty">1</span><div><strong>Es Teh</strong><small>Normal</small></div><b>Rp4.000</b></div>
+              </div>
+              <button class="add-note">+ Tambah catatan pesanan</button>
+              <div class="bill"><div><span>Subtotal</span><strong id="subtotal">Rp34.000</strong></div><div><span>Biaya layanan</span><strong>Rp0</strong></div><div class="total"><span>Total</span><strong id="total">Rp34.000</strong></div></div>
+              <div class="payment-label"><span>Metode pembayaran</span><button>Kelola</button></div>
+              <div class="payment-options"><button class="selected">QRIS</button><button>Tunai</button><button>Lainnya</button></div>
+              <button class="pay-button"><span>Proses pembayaran</span><strong id="pay-total">Rp34.000</strong></button>
+              <p class="secure-note">Stok bahan akan divalidasi otomatis sebelum transaksi diproses.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas-item" id="inventory">
+      <div class="canvas-label"><span>03</span> Inventory &amp; Recipe</div>
+      <div class="screen inventory-screen">
+        <aside class="sidebar light-sidebar">
+          <div class="brand dark-brand"><span class="brand-mark">E</span><div><strong>EaTS</strong><small>Warung IF</small></div></div>
+          <nav class="side-nav dark-nav">
+            <a href="#owner"><span>OV</span>Overview</a><a href="#pos"><span>TR</span>Transaksi</a><a href="#customer"><span>MN</span>Menu</a><a class="active" href="#inventory"><span>ST</span>Stok bahan</a><a href="#inventory"><span>RP</span>Resep</a><a href="#owner"><span>MJ</span>Meja</a><a href="#owner"><span>LP</span>Laporan</a>
+          </nav>
+          <div class="inventory-tip"><strong>Auto-stock aktif</strong><p>Setiap pesanan akan memotong stok sesuai komposisi resep.</p><span>2 trigger berjalan</span></div>
+          <div class="profile-row dark-profile"><span class="avatar">IB</span><div><strong>Imam Baidhawi</strong><small>Pemilik Warung</small></div></div>
+        </aside>
+        <div class="inventory-main">
+          <header class="inventory-header"><div><span class="eyebrow coral-text">INVENTORY CONTROL</span><h1>Stok &amp; resep</h1><p>Pantau bahan baku dan dampaknya pada ketersediaan menu.</p></div><div><button class="outline-button dark-outline">Import stok</button><button class="dark-button">+ Restock bahan</button></div></header>
+          <div class="inventory-metrics">
+            <article><span class="metric-icon coral">!</span><div><small>Butuh perhatian</small><strong>3 bahan</strong><p>Gula, Kopi, Kentang Beku</p></div></article>
+            <article><span class="metric-icon violet">∑</span><div><small>Total bahan</small><strong>7 item</strong><p>2 warung terhubung</p></div></article>
+            <article><span class="metric-icon cyan">↻</span><div><small>Update terakhir</small><strong>13:00</strong><p>Transaksi TX26000003</p></div></article>
+          </div>
+          <div class="inventory-layout">
+            <section class="inventory-table-panel">
+              <div class="inventory-toolbar"><div><span class="eyebrow">BAHAN BAKU</span><h2>Level persediaan</h2></div><div class="search-box tiny"><span>⌕</span><input placeholder="Cari bahan"></div><button class="filter-button">Semua warung ⌄</button></div>
+              <div class="inventory-table">
+                <div class="inventory-row header"><span>BAHAN</span><span>WARUNG</span><span>STOK</span><span>LEVEL</span><span>STATUS</span></div>
+                <div class="inventory-row"><span><i class="ingredient rice"></i><b>Beras</b><small>B0001 · kg</small></span><span>Warung IF</span><span><b>25,00</b> kg</span><span><em><u style="width:76%"></u></em></span><span class="status success">Aman</span></div>
+                <div class="inventory-row"><span><i class="ingredient egg"></i><b>Telur</b><small>B0002 · kg</small></span><span>Warung IF</span><span><b>10,00</b> kg</span><span><em><u style="width:48%"></u></em></span><span class="status warning">Menipis</span></div>
+                <div class="inventory-row"><span><i class="ingredient tea-icon"></i><b>Teh Celup</b><small>B0003 · bks</small></span><span>Warung IF</span><span><b>50,00</b> bks</span><span><em><u style="width:88%"></u></em></span><span class="status success">Aman</span></div>
+                <div class="inventory-row"><span><i class="ingredient sugar"></i><b>Gula</b><small>B0004 · kg</small></span><span>Warung IF</span><span><b>5,00</b> kg</span><span><em class="critical"><u style="width:18%"></u></em></span><span class="status danger">Kritis</span></div>
+                <div class="inventory-row"><span><i class="ingredient coffee-icon"></i><b>Kopi</b><small>B0005 · kg</small></span><span>Kopi TC</span><span><b>5,00</b> kg</span><span><em class="critical"><u style="width:18%"></u></em></span><span class="status danger">Kritis</span></div>
+                <div class="inventory-row"><span><i class="ingredient milk"></i><b>Susu Kental</b><small>B0006 · kaleng</small></span><span>Kopi TC</span><span><b>10,00</b></span><span><em><u style="width:46%"></u></em></span><span class="status warning">Menipis</span></div>
+                <div class="inventory-row"><span><i class="ingredient potato"></i><b>Kentang Beku</b><small>B0007 · kg</small></span><span>Kopi TC</span><span><b>8,00</b> kg</span><span><em class="critical"><u style="width:28%"></u></em></span><span class="status danger">Kritis</span></div>
+              </div>
+            </section>
+            <aside class="recipe-panel">
+              <div class="recipe-head"><div><span class="eyebrow lime">RECIPE IMPACT</span><h2>Nasgor IF</h2><p>M0001 · 50 porsi tersedia</p></div><span class="recipe-badge">AKTIF</span></div>
+              <div class="recipe-visual"><div class="plate"><span></span></div><div class="recipe-yield"><small>Estimasi maksimum</small><strong>166</strong><span>porsi dari stok beras</span></div></div>
+              <div class="formula"><span>1 porsi</span><b>=</b><div><strong>0,15 kg</strong><small>Beras</small></div><b>+</b><div><strong>0,06 kg</strong><small>Telur</small></div></div>
+              <div class="recipe-alert"><span>!</span><div><strong>Validasi otomatis aktif</strong><p>Pesanan akan ditolak jika kebutuhan bahan melebihi stok tersedia.</p></div></div>
+              <button class="recipe-button">Edit komposisi resep →</button>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas-item" id="customer">
+      <div class="canvas-label"><span>04</span> Customer Menu</div>
+      <div class="screen customer-screen">
+        <header class="customer-nav">
+          <div class="brand customer-brand"><span class="brand-mark">E</span><div><strong>EaTS</strong><small>Easy Transaction System</small></div></div>
+          <nav><a class="active" href="#customer-menu">Menu</a><a href="#customer-hero">Cara pesan</a><a href="#customer-cart">Status meja</a></nav>
+          <div><button class="location-button"><span>●</span> Kantin Informatika ⌄</button><button class="cart-button">Keranjang <b id="cart-count">2</b></button></div>
+        </header>
+        <div class="customer-body">
+          <section class="customer-hero" id="customer-hero">
+            <div class="hero-copy"><span class="eyebrow lime">OPEN NOW · UNTIL 16:00</span><h1>Makan enak,<br><em>tanpa antre lama.</em></h1><p>Pesan lebih dulu, pilih meja, lalu nikmati waktu istirahatmu di kantin Informatika.</p><div class="hero-actions"><button class="lime-button">Lihat menu hari ini</button><button class="plain-button">Cara kerja EaTS →</button></div><div class="social-proof"><span class="avatar-stack"><i>BU</i><i>CI</i><i>DI</i></span><div><strong>4,8 / 5</strong><small>dari warga Informatika</small></div></div></div>
+            <div class="hero-art">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="hero-plate"><span class="rice-shape"></span><span class="egg-shape"></span><span class="leaf one"></span><span class="leaf two"></span></div>
+              <div class="floating-card wait"><span>≈</span><div><small>ESTIMASI SIAP</small><strong>8–12 menit</strong></div></div>
+              <div class="floating-card tables"><span>03</span><div><small>MEJA TERSEDIA</small><strong>2 meja kosong</strong></div></div>
+            </div>
+          </section>
+          <section class="menu-discovery" id="customer-menu">
+            <div class="discovery-head"><div><span class="eyebrow coral-text">PILIH FAVORITMU</span><h2>Menu kantin hari ini</h2></div><div class="category-tabs"><button class="active" data-filter="semua">Semua</button><button data-filter="makanan">Makanan</button><button data-filter="minuman">Minuman</button><button data-filter="warung-if">Warung IF</button><button data-filter="kopi-tc">Kopi TC</button></div></div>
+            <div class="customer-menu-layout">
+              <div class="customer-cards">
+                <article class="customer-food-card" data-category="makanan" data-vendor="warung-if"><div class="customer-food-art nasgor"><span class="popular-sticker">#1 TERLARIS</span></div><div><span class="food-tag">WARUNG IF</span><h3>Nasgor IF</h3><p>Nasi goreng signature, telur, dan racikan bumbu kantin.</p><footer><strong>Rp15.000</strong><button class="customer-add" data-name="Nasgor IF" data-price="15000">Tambah +</button></footer></div></article>
+                <article class="customer-food-card" data-category="minuman" data-vendor="kopi-tc"><div class="customer-food-art coffee"></div><div><span class="food-tag blue">KOPI TC</span><h3>Kopi Susu</h3><p>Kopi lembut dengan susu kental, pas untuk siang padat.</p><footer><strong>Rp12.000</strong><button class="customer-add" data-name="Kopi Susu" data-price="12000">Tambah +</button></footer></div></article>
+                <article class="customer-food-card" data-category="makanan" data-vendor="kopi-tc"><div class="customer-food-art fries"></div><div><span class="food-tag">KOPI TC</span><h3>Kentang</h3><p>Renyah, gurih, dan paling cocok untuk teman diskusi.</p><footer><strong>Rp10.000</strong><button class="customer-add" data-name="Kentang" data-price="10000">Tambah +</button></footer></div></article>
+              </div>
+              <aside class="customer-cart" id="customer-cart">
+                <div class="cart-head"><div><span class="eyebrow lime">YOUR ORDER</span><h2>Pesananmu</h2></div><span class="cart-step">01 / 03</span></div>
+                <div class="pickup-toggle"><button class="active">Makan di tempat</button><button>Bawa pulang</button></div>
+                <div class="cart-table"><span>MEJA PILIHAN</span><div><i>01</i><p><strong>Meja 001</strong><small>4 kursi · dekat jendela</small></p><button>Ubah</button></div></div>
+                <div class="cart-items" id="customer-cart-items"><div><span>2×</span><p><strong>Nasgor IF</strong><small>Pedas sedang</small></p><b>Rp30.000</b></div><div><span>1×</span><p><strong>Es Teh</strong><small>Normal</small></p><b>Rp4.000</b></div></div>
+                <div class="cart-total"><span>Total sementara</span><strong id="customer-total">Rp34.000</strong></div>
+                <button class="checkout-button">Lanjutkan pesanan <span>→</span></button>
+                <p>Stok diperiksa real-time saat checkout.</p>
+              </aside>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

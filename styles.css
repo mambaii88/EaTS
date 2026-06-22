@@ -482,23 +482,23 @@ h3 {
   padding: 24px;
 }
 
-.download-card {
+.launch-card {
   background: var(--ink);
   color: var(--white);
 }
 
-.download-card p {
+.launch-card p {
   color: #c8ced8;
 }
 
-.download-card .primary-link {
+.launch-card .primary-link {
   width: fit-content;
   margin-top: 10px;
   background: var(--lime);
   color: var(--ink);
 }
 
-.download-icon {
+.launch-icon {
   display: grid;
   width: 54px;
   height: 54px;
