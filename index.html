@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EaTS Final Project Portfolio</title>
+  <meta name="description" content="Website portofolio dan laporan final project EaTS - Easy Transaction System.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EaTS home">
+      <span class="brand-mark">E</span>
+      <span>
+        <strong>EaTS</strong>
+        <small>Final Project Report</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#overview">Ringkasan</a>
+      <a href="#features">Fitur</a>
+      <a href="#gallery">UI</a>
+      <a href="#demo">Demo ZIP</a>
+      <a href="#report">Laporan</a>
+    </nav>
+    <a class="nav-button" href="eats-ui-prototype.zip" download>Download demo</a>
+  </header>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio Final Project Kampus</p>
+        <h1>Easy Transaction System untuk kantin kampus.</h1>
+        <p class="hero-text">EaTS adalah rancangan aplikasi kasir, pemesanan, inventori, dan laporan penjualan untuk membantu operasional kantin berjalan lebih rapi, cepat, dan terukur.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#overview">Baca laporan</a>
+          <a class="secondary-link" href="eats-ui-prototype.zip" download>Download file demo</a>
+        </div>
+        <dl class="quick-facts" id="quick-facts" aria-label="Statistik proyek"></dl>
+      </div>
+      <figure class="hero-visual">
+        <img src="owner.png" alt="Preview owner dashboard EaTS">
+        <figcaption>
+          <span>Owner Dashboard</span>
+          <strong>Omzet, transaksi, meja, dan stok dalam satu layar.</strong>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section-band" id="overview">
+      <div class="section-heading">
+        <p class="eyebrow">Project Overview</p>
+        <h2>Masalah yang diselesaikan</h2>
+        <p>Kantin kecil sering mencatat pesanan, stok bahan, dan laporan penjualan secara terpisah. EaTS menyatukan alur tersebut ke dalam satu sistem sederhana.</p>
+      </div>
+      <div class="overview-grid">
+        <article>
+          <span>01</span>
+          <h3>Transaksi lebih cepat</h3>
+          <p>Kasir dapat memilih meja, pelanggan, menu, metode bayar, dan langsung memproses total pesanan.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Stok otomatis</h3>
+          <p>Setiap detail transaksi terhubung dengan resep sehingga stok bahan dapat divalidasi dan dikurangi otomatis.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Laporan operasional</h3>
+          <p>Owner melihat omzet harian, menu terlaris, status meja, dan bahan yang perlu restock.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section two-column" id="features">
+      <div class="section-heading sticky-heading">
+        <p class="eyebrow">Core Features</p>
+        <h2>Fitur utama sistem</h2>
+        <p>Bagian ini merangkum fitur yang digambarkan di prototype UI, cukup untuk menjelaskan alur final project saat presentasi.</p>
+      </div>
+      <div class="feature-list" id="feature-list"></div>
+    </section>
+
+    <section class="section-band" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">UI Prototype</p>
+        <h2>Galeri rancangan antarmuka</h2>
+        <p>Empat tampilan utama yang mewakili role owner, kasir, pengelola stok, dan pembeli.</p>
+      </div>
+      <div class="gallery-tabs" id="gallery-tabs" aria-label="Pilih tampilan UI"></div>
+      <div class="gallery-view">
+        <div>
+          <img id="screen-image" src="owner.png" alt="Owner dashboard">
+        </div>
+        <aside class="screen-detail" id="screen-detail"></aside>
+      </div>
+    </section>
+
+    <section class="content-section demo-section" id="demo">
+      <div class="section-heading">
+        <p class="eyebrow">Demo Package</p>
+        <h2>File demo dikemas dalam ZIP</h2>
+        <p>Tombol demo mengunduh paket prototype agar penguji bisa melihat aset dan struktur website tanpa perlu menjalankan aplikasi tambahan.</p>
+      </div>
+      <div class="demo-grid">
+        <article class="demo-card download-card">
+          <span class="download-icon">ZIP</span>
+          <h3>eats-ui-prototype.zip</h3>
+          <p>Berisi file website statis dan empat gambar UI prototype untuk menggambarkan fitur EaTS.</p>
+          <a class="primary-link" href="eats-ui-prototype.zip" download>Download ZIP</a>
+        </article>
+        <article class="demo-card">
+          <h3>Isi paket demo</h3>
+          <div class="file-list" id="file-list"></div>
+        </article>
+        <article class="demo-card">
+          <h3>Yang tergambar dari demo</h3>
+          <ul class="coverage-list" id="coverage-list"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band" id="report">
+      <div class="section-heading">
+        <p class="eyebrow">Report Material</p>
+        <h2>Bahan presentasi laporan</h2>
+        <p>Bagian ini merangkum entitas database, stack teknologi, dan timeline pengerjaan final project.</p>
+      </div>
+      <div class="report-grid">
+        <article class="report-card">
+          <h3>Entitas database</h3>
+          <div class="pill-list" id="entity-list"></div>
+        </article>
+        <article class="report-card">
+          <h3>Tech stack</h3>
+          <div class="stack-list" id="stack-list"></div>
+        </article>
+        <article class="report-card timeline-card">
+          <h3>Timeline</h3>
+          <ol id="timeline-list"></ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>EaTS - Easy Transaction System</strong>
+      <p>Website portofolio dan laporan final project kampus.</p>
+    </div>
+    <a href="#home">Kembali ke atas</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
